@@ -9,18 +9,93 @@
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/static/regist/a.js"></script>
+    <link href="/static/regist/b.css" rel="stylesheet">
 </head>
 <body>
     <form action="" role='form' method="post">
         <input type="text" placeholder="用户名" name='username' id='user' >
         <input type="text" placeholder="密码" name='password' id='pas'>
         <input type="button" value='提交' id='btn'>
-        <p id='p1' style="display: none;color: red">用户名或密码为空！！</p>
-        <p id='p2' style="display: none;color: green">提交成功</p>
-        <p id='p3' style="display: none;color: red">用户名或密码错误</p>
+        <p id='p1' >用户名或密码为空！！</p>
+        <p id='p2' >提交成功</p>
+        <p id='p3' >用户名或密码错误</p>
+        <p id='p4'></p>
         {{error}}
         {{success}}
         {% csrf_token %}
+    </form>
+    <h1>--------------------------------------</h1>
+    <form action="" method="post">
+        http://<input type="text" placeholder="139.217.9.208" name='urlname' id='urlname' value="139.217.9.208"><br/>
+        条数：<input type="text" name='number' id='number' placeholder="81600" value="81600">
+        <input type="button" value="提交" id='btn2'>
+        <div class='content'>
+            <div class='left'>
+                <h3>各省网站访问权重</h3>
+                &nbsp;北京: <input type="" name="北京" value="1.5"><br/>
+                &nbsp;上海：<input type="" name="上海" value="0.5"><br/>
+                &nbsp;天津：<input type="" name="天津" value="1.2"><br/>
+                &nbsp;重庆：<input type="" name="重庆" value="0.8"><br/>
+                &nbsp;黑龙江：<input type="" name="黑龙江" value="0.3"><br/>
+                &nbsp;吉林：<input type="" name="吉林" value="1.7"><br/>
+                &nbsp;辽宁：<input type="" name="辽宁" value="1"><br/>
+                &nbsp;江苏：<input type="" name="江苏" value="1"><br/>
+                &nbsp;山东：<input type="" name="山东" value="1"><br/>
+                &nbsp;安徽：<input type="" name="安徽" value="1"><br/>
+                &nbsp;河北：<input type="" name="河北" value="1"><br/>
+                &nbsp;河南：<input type="" name="河南" value="1"><br/>
+                &nbsp;湖北：<input type="" name="湖北" value="1"><br/>
+                &nbsp;湖南：<input type="" name="湖南" value="1"><br/>
+                &nbsp;江西：<input type="" name="江西" value="1"><br/>
+                &nbsp;陕西：<input type="" name="陕西" value="1"><br/>
+                &nbsp;山西：<input type="" name="山西" value="1"><br/>
+                &nbsp;四川：<input type="" name="四川" value="1"><br/>
+                &nbsp;青海：<input type="" name="青海" value="1"><br/>
+                &nbsp;海南：<input type="" name="海南" value="1"><br/>
+                &nbsp;广东：<input type="" name="广东" value="1"><br/>
+                &nbsp;贵州：<input type="" name="贵州" value="1"><br/>
+                &nbsp;浙江：<input type="" name="浙江" value="1"><br/>
+                &nbsp;福建：<input type="" name="福建" value="1"><br/>
+                &nbsp;台湾：<input type="" name="台湾" value="1"><br/>
+                &nbsp;甘肃：<input type="" name="甘肃" value="1"><br/>
+                &nbsp;云南：<input type="" name="云南" value="1"><br/>
+                &nbsp;内蒙古：<input type="" name="内蒙古" value="1"><br/>
+                &nbsp;宁夏：<input type="" name="宁夏" value="1"><br/>
+                &nbsp;新疆：<input type="" name="新疆" value="1"><br/>
+                &nbsp;西藏：<input type="" name="西藏" value="1"><br/>
+                &nbsp;广西：<input type="" name="广西" value="1"><br/>
+                &nbsp;香港：<input type="" name="香港" value="1"><br/>
+                &nbsp;澳门：<input type="" name="澳门" value="1"><br/>
+            </div>
+            <div class='right'>
+                <h3>各时间段网站访问权重</h3>
+                &nbsp;00:00-00:59：<input type="" name="00:00-00:59" value="1"><br/>
+                &nbsp;01:00-01:59：<input type="" name="01:00-01:59" value="1"><br/>
+                &nbsp;02:00-02:59：<input type="" name="02:00-02:59" value="1"><br/>
+                &nbsp;03:00-03:59：<input type="" name="03:00-03:59" value="1"><br/>
+                &nbsp;04:00-04:59：<input type="" name="04:00-04:59" value="1"><br/>
+                &nbsp;05:00-05:59：<input type="" name="05:00-05:59" value="1"><br/>
+                &nbsp;06:00-06:59：<input type="" name="06:00-06:59" value="1"><br/>
+                &nbsp;07:00-07:59：<input type="" name="07:00-07:59" value="1"><br/>
+                &nbsp;08:00-08:59：<input type="" name="08:00-08:59" value="1"><br/>
+                &nbsp;09:00-09:59：<input type="" name="09:00-09:59" value="1"><br/>
+                &nbsp;10:00-10:59：<input type="" name="10:00-10:59" value="1"><br/>
+                &nbsp;11:00-11:59：<input type="" name="11:00-11:59" value="1"><br/>
+                &nbsp;12:00-12:59：<input type="" name="12:00-12:59" value="1"><br/>
+                &nbsp;13:00-13:59：<input type="" name="13:00-13:59" value="1"><br/>
+                &nbsp;14:00-14:59：<input type="" name="14:00-14:59" value="1"><br/>
+                &nbsp;15:00-15:59：<input type="" name="15:00-15:59" value="1"><br/>
+                &nbsp;16:00-16:59：<input type="" name="16:00-16:59" value="1"><br/>
+                &nbsp;17:00-17:59：<input type="" name="17:00-17:59" value="1"><br/>
+                &nbsp;18:00-18:59：<input type="" name="18:00-18:59" value="1"><br/>
+                &nbsp;19:00-19:59：<input type="" name="19:00-19:59" value="1"><br/>
+                &nbsp;20:00-20:59：<input type="" name="20:00-20:59" value="1"><br/>
+                &nbsp;21:00-21:59：<input type="" name="21:00-21:59" value="1"><br/>
+                &nbsp;22:00-22:59：<input type="" name="22:00-22:59" value="1"><br/>
+                &nbsp;23:00-23:59：<input type="" name="23:00-23:59" value="1"><br/>
+            </div>
+        </div>
+   
     </form>
 </body>
 </html>

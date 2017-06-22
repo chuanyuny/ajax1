@@ -21,5 +21,6 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^index/$',views.index),
     url(r'^login_action/$',views.login_action),
+    url(r'^send_request/$',views.send_request),
     
 ]

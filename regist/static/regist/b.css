@@ -1,0 +1,31 @@
+#p1{
+    display: none;
+    color: red;
+}
+#p2{
+    display: none;
+    color: green;
+}
+#p3{
+    display: none;
+    color: red;
+}
+.content{
+	background-color: pink;
+	height: 1000px;
+	width: 1000px;
+	margin: auto;
+}
+.left{
+	height: 1000px;
+	width: 495px;
+	background-color: green;
+	margin: 0 1px;
+	float: left;
+}
+.right{
+	height: 1000px;
+	width: 495px;
+	background-color: gray;
+	float: right;
+}
